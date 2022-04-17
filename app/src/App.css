@@ -1,0 +1,141 @@
+
+body {
+  height: 100vh;
+  border: 0;
+  margin: 0;
+}
+
+header {
+  box-sizing: border-box;
+  height: 160px;
+  padding: 20px;
+  border-width: 0 0 1px 0;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: lightslategray;
+}
+
+.logo {
+  font-size: 40px;
+  font-family: 'Rubik Wet Paint', cursive;
+  letter-spacing: 5px;
+  padding-left: 200px;
+}
+
+/* 
+INICIO DO CODIGO DA IMAGEM LOGO   ------------------------------------------------
+           DIV - ID = CF 
+*/
+
+#cf {
+  position:relative;
+  margin: 0 140px 80px 0;
+  cursor: grab;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: transparent;
+  border: gray 1px solid;
+
+}
+
+ @keyframes cf3FadeInOut {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:0.6;
+}
+55% {
+opacity:0.4;
+}
+100% {
+opacity:0;
+}
+}
+
+#cf img.top {
+animation-name: cf3FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 1s;
+animation-direction: alternate;
+}
+
+/*   
+FINAL DO CODIGO DA IMAGEM LOGO ----------------------------------------------------
+*/
+
+
+ 
+.card-list {
+  box-sizing: border-box;
+  min-height: calc(100% - 180px);
+  text-align: center;
+  padding: 20px; 
+}
+
+.card {
+  width: 26%;
+  margin: 3%;
+  border: 1px solid black;
+  display: inline-block;
+  height: 150px;
+  text-align: center;
+}
+
+#footer {
+  box-sizing: border-box;
+  height: 100px;
+  text-align: center;
+  border-width: 1px 0 0 0;
+  border-color: black;
+  border-style: solid;
+  padding: 10px;
+  width: 100%;
+  bottom: 0px;
+  background-color: white;
+}
+
+
+
+
+
+
+
+/*
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+*/
